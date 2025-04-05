@@ -25,3 +25,17 @@ Kod: ./exercise-1-paradigms
 ❌ 5.0 wymaganie 5 -
 
 Kod: ./exercise-2
+
+## Zadanie 3 Spring Boot (Kotlin)
+
+✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/fe88cfb27756accac9dddc8826f13ebf6cb97c0f)
+
+✅ 3.5 wymaganie 2 [commit](https://github.com/mdros/uj-objective-programming/commit/fe88cfb27756accac9dddc8826f13ebf6cb97c0f)
+
+✅ 4.0 wymaganie 3 [commit](https://github.com/mdros/uj-objective-programming/commit/fe88cfb27756accac9dddc8826f13ebf6cb97c0f)
+
+✅ 4.5 wymaganie 4 [commit](https://github.com/mdros/uj-objective-programming/commit/fe88cfb27756accac9dddc8826f13ebf6cb97c0f)
+
+✅ 5.0 wymaganie 5 [commit](https://github.com/mdros/uj-objective-programming/commit/fe88cfb27756accac9dddc8826f13ebf6cb97c0f)
+
+Kod: ./exercise-3
