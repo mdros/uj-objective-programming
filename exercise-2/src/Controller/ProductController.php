@@ -48,15 +48,21 @@ class ProductController extends AbstractController
     }
 
     #[Route('/product', name: 'create_product', methods: ['POST'])]
-    public function createProduct(EntityManagerInterface $entityManager): Response
+    public function createProduct(EntityManagerInterface $entityManager, Request $request): Response
     {
+        $data = json_decode($request->getContent(), true);
+
+        if (!isset($data['name']) || empty($data['name'])) {
+            return $this->json(['error' => 'Name is required'], Response::HTTP_BAD_REQUEST);
+        }
+
         $product = new Product();
-        $product->setName('Keyboard');
+        $product->setName($data['name']);
 
         $entityManager->persist($product);
         $entityManager->flush();
 
-        return new Response('Saved new product with id ' . $product->getId());
+        return $this->json($product, Response::HTTP_CREATED);
     }
 
     #[Route('/product/{id}', name: 'delete_product', methods: ['DELETE'])]

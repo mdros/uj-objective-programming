@@ -26,5 +26,6 @@ Kod: ./exercise-1-paradigms
 
 Kod: ./exercise-2
 
-![alt text](images/exercise-2/exercise-2-demo.png "demo1")
-![alt text](images/exercise-2/exercise-2-id-demo.png "demo2")
+<video width="560" height="320" controls>
+  <source src="images/exercise-2/exercise-2-demo.mp4" type="video/mp4">
+</video>
