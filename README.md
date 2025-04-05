@@ -25,7 +25,3 @@ Kod: ./exercise-1-paradigms
 ❌ 5.0 wymaganie 5 -
 
 Kod: ./exercise-2
-
-<video width="560" height="320" controls>
-  <source src="images/exercise-2/exercise-2-demo.mp4" type="video/mp4">
-</video>
