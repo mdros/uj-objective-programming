@@ -14,7 +14,7 @@ Kod: ./exercise-1-paradigms
 
 ## Zadanie 2 Symfony
 
-✅ 3.0 wymaganie 1 Link do commita 1
+✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/c64740e26dfeec25b1083492cdd60f2932f9d993)
 
 ❌ 3.5 wymaganie 2 
 
