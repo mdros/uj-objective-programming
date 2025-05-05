@@ -39,3 +39,17 @@ Kod: ./exercise-2
 ✅ 5.0 wymaganie 5 [commit](https://github.com/mdros/uj-objective-programming/commit/fe88cfb27756accac9dddc8826f13ebf6cb97c0f)
 
 Kod: ./exercise-3
+
+## Zadanie 4 Go
+
+✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/d6a822e5448e911f9b69eebe2b9bc21faeff3393)
+
+❌ 3.5 wymaganie 2 
+
+❌ 4.0 wymaganie 3
+
+❌ 4.5 wymaganie 4 -
+
+❌ 5.0 wymaganie 5 -
+
+Kod: ./exercise-4
