@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"os"
 
@@ -14,46 +15,68 @@ type ForecastResponse struct {
 }
 
 func getForecast(c echo.Context) error {
-	err := godotenv.Load()
-	if err != nil {
-		return c.JSON(http.StatusInternalServerError, map[string]string{"error": "Failed to load .env file"})
+	if err := godotenv.Load(); err != nil {
+		return respondWithError(c, http.StatusInternalServerError, "Failed to load .env file")
 	}
+
 	apiKey := os.Getenv("WEATHER_API_KEY")
 	if apiKey == "" {
-		return c.JSON(http.StatusInternalServerError, map[string]string{"error": "API key not found in .env"})
+		return respondWithError(c, http.StatusInternalServerError, "API key not found in .env")
 	}
 
 	location := c.QueryParam("q")
 	if location == "" {
-		return c.JSON(http.StatusBadRequest, map[string]string{"error": "Query parameter 'q' is required"})
+		return respondWithError(c, http.StatusBadRequest, "Query parameter 'q' is required")
 	}
 
+	apiResponse, err := fetchWeatherData(apiKey, location)
+	if err != nil {
+		return respondWithError(c, http.StatusInternalServerError, err.Error())
+	}
+
+	forecast, err := parseForecast(apiResponse)
+	if err != nil {
+		return respondWithError(c, http.StatusInternalServerError, err.Error())
+	}
+
+	return c.JSON(http.StatusOK, map[string]interface{}{"forecast": forecast})
+}
+
+func respondWithError(c echo.Context, status int, message string) error {
+	return c.JSON(status, map[string]string{"error": message})
+}
+
+func fetchWeatherData(apiKey, location string) (map[string]interface{}, error) {
 	apiURL := "https://api.weatherapi.com/v1/forecast.json"
 	reqURL := apiURL + "?key=" + apiKey + "&q=" + location + "&days=5&aqi=no&alerts=no"
 
 	resp, err := http.Get(reqURL)
 	if err != nil {
-		return c.JSON(http.StatusInternalServerError, map[string]string{"error": "Failed to fetch data from WeatherAPI"})
+		return nil, err
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		return c.JSON(http.StatusInternalServerError, map[string]string{"error": "WeatherAPI returned an error"})
+		return nil, fmt.Errorf("WeatherAPI returned an error")
 	}
 
 	var apiResponse map[string]interface{}
 	if err := json.NewDecoder(resp.Body).Decode(&apiResponse); err != nil {
-		return c.JSON(http.StatusInternalServerError, map[string]string{"error": "Failed to parse WeatherAPI response"})
+		return nil, fmt.Errorf("failed to parse WeatherAPI response")
 	}
 
+	return apiResponse, nil
+}
+
+func parseForecast(apiResponse map[string]interface{}) ([]map[string]interface{}, error) {
 	forecastData, ok := apiResponse["forecast"].(map[string]interface{})
 	if !ok {
-		return c.JSON(http.StatusInternalServerError, map[string]string{"error": "Invalid forecast data format"})
+		return nil, fmt.Errorf("invalid forecast data format")
 	}
 
 	forecastDays, ok := forecastData["forecastday"].([]interface{})
 	if !ok {
-		return c.JSON(http.StatusInternalServerError, map[string]string{"error": "Invalid forecast days format"})
+		return nil, fmt.Errorf("invalid forecast days format")
 	}
 
 	var result []map[string]interface{}
@@ -81,11 +104,7 @@ func getForecast(c echo.Context) error {
 		})
 	}
 
-	apiResponse = map[string]interface{}{
-		"forecast": result,
-	}
-
-	return c.JSON(http.StatusOK, apiResponse)
+	return result, nil
 }
 
 func main() {
