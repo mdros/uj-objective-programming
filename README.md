@@ -53,3 +53,17 @@ Kod: ./exercise-3
 ❌ 5.0 wymaganie 5 -
 
 Kod: ./exercise-4
+
+## Zadanie 5 React
+
+✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/ef5adece6df89af1bc2f3a1e45865403d82bc132)
+
+✅ 3.5 wymaganie 2 [commit](https://github.com/mdros/uj-objective-programming/commit/ef5adece6df89af1bc2f3a1e45865403d82bc132)
+
+✅ 4.0 wymaganie 3 [commit](https://github.com/mdros/uj-objective-programming/commit/ef5adece6df89af1bc2f3a1e45865403d82bc132)
+
+❌ 4.5 wymaganie 4 -
+
+❌ 5.0 wymaganie 5 -
+
+Kod: ./exercise-5
