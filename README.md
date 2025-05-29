@@ -86,7 +86,7 @@ Kod: ./exercise-5
 
 ## Zadanie 7 Vapor
 
-✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/51a1274b8757c65a847388536e141313d286c661)
+✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/f4931821e94b4440044eae253192a297142ae4d7)
 
 ❌ 3.5 wymaganie 2
 
@@ -96,4 +96,4 @@ Kod: ./exercise-5
 
 ❌ 5.0 wymaganie 5
 
-Kod: ./exercise-5
+Kod: ./exercise-7
