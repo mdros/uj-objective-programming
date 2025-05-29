@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mdros_uj-objective-programming&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mdros_uj-objective-programming)
+
 ## Zadanie 1 Paradigms
 
 ✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/53d52c86e6579a4029fe7dd17d13e1ca2abd48b2)
@@ -61,6 +63,20 @@ Kod: ./exercise-4
 ✅ 3.5 wymaganie 2 [commit](https://github.com/mdros/uj-objective-programming/commit/ef5adece6df89af1bc2f3a1e45865403d82bc132)
 
 ✅ 4.0 wymaganie 3 [commit](https://github.com/mdros/uj-objective-programming/commit/ef5adece6df89af1bc2f3a1e45865403d82bc132)
+
+❌ 4.5 wymaganie 4 -
+
+❌ 5.0 wymaganie 5 -
+
+Kod: ./exercise-5
+
+## Zadanie 6 Code smells
+
+✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/51a1274b8757c65a847388536e141313d286c661)
+
+❌ 3.5 wymaganie 2
+
+❌ 4.0 wymaganie 3
 
 ❌ 4.5 wymaganie 4 -
 
