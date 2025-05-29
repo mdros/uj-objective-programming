@@ -8,9 +8,9 @@
 
 ✅ 4.0 wymaganie 3 [commit](https://github.com/mdros/uj-objective-programming/commit/b1d196bc4de839ce3e1a6ba32ee4f531dba5e05e)
 
-❌ 4.5 wymaganie 4 -
+❌ 4.5 wymaganie 4
 
-❌ 5.0 wymaganie 5 -
+❌ 5.0 wymaganie 5
 
 Kod: ./exercise-1-paradigms
 
@@ -22,9 +22,9 @@ Kod: ./exercise-1-paradigms
 
 ❌ 4.0 wymaganie 3
 
-❌ 4.5 wymaganie 4 -
+❌ 4.5 wymaganie 4
 
-❌ 5.0 wymaganie 5 -
+❌ 5.0 wymaganie 5
 
 Kod: ./exercise-2
 
@@ -50,9 +50,9 @@ Kod: ./exercise-3
 
 ❌ 4.0 wymaganie 3
 
-❌ 4.5 wymaganie 4 -
+❌ 4.5 wymaganie 4
 
-❌ 5.0 wymaganie 5 -
+❌ 5.0 wymaganie 5
 
 Kod: ./exercise-4
 
@@ -64,9 +64,9 @@ Kod: ./exercise-4
 
 ✅ 4.0 wymaganie 3 [commit](https://github.com/mdros/uj-objective-programming/commit/ef5adece6df89af1bc2f3a1e45865403d82bc132)
 
-❌ 4.5 wymaganie 4 -
+❌ 4.5 wymaganie 4
 
-❌ 5.0 wymaganie 5 -
+❌ 5.0 wymaganie 5
 
 Kod: ./exercise-5
 
@@ -81,5 +81,19 @@ Kod: ./exercise-5
 ✅ 4.5 wymaganie 4
 
 ✅ 5.0 wymaganie 5 [commit](https://github.com/mdros/uj-objective-programming/commit/51a1274b8757c65a847388536e141313d286c661)
+
+Kod: ./exercise-5
+
+## Zadanie 7 Vapor
+
+✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/51a1274b8757c65a847388536e141313d286c661)
+
+❌ 3.5 wymaganie 2
+
+❌ 4.0 wymaganie 3
+
+❌ 4.5 wymaganie 4
+
+❌ 5.0 wymaganie 5
 
 Kod: ./exercise-5
