@@ -74,11 +74,11 @@ Kod: ./exercise-5
 
 ✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/51a1274b8757c65a847388536e141313d286c661)
 
-❌ 3.5 wymaganie 2
+✅ 3.5 wymaganie 2
 
-❌ 4.0 wymaganie 3
+✅ 4.0 wymaganie 3
 
-❌ 4.5 wymaganie 4
+✅ 4.5 wymaganie 4
 
 ✅ 5.0 wymaganie 5 [commit](https://github.com/mdros/uj-objective-programming/commit/51a1274b8757c65a847388536e141313d286c661)
 
