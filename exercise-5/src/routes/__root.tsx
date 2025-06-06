@@ -4,7 +4,7 @@ import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 export const Route = createRootRoute({
 	component: () => (
 		<>
-			<div className="p-4 flex gap-6">
+			<div className="p-4 flex gap-6" id="topbar">
 				<Link to="/" className="[&.active]:font-bold text-lg hover:underline">
 					Home
 				</Link>
@@ -19,6 +19,12 @@ export const Route = createRootRoute({
 					className="[&.active]:font-bold text-xl hover:underline"
 				>
 					Orders
+				</Link>
+				<Link to="/" className="[&.active]:font-bold text-xl hover:underline">
+					Contact Us
+				</Link>
+				<Link to="/" className="[&.active]:font-bold text-xl hover:underline">
+					Profile
 				</Link>
 			</div>
 			<hr />

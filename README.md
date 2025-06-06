@@ -97,3 +97,17 @@ Kod: ./exercise-5
 ❌ 5.0 wymaganie 5
 
 Kod: ./exercise-7
+
+## Zadanie 8 Testy
+
+✅ 3.0 wymaganie 1
+
+❌ 3.5 wymaganie 2
+
+❌ 4.0 wymaganie 3
+
+❌ 4.5 wymaganie 4
+
+❌ 5.0 wymaganie 5
+
+Kod: ./exercise-5/tests
