@@ -100,7 +100,7 @@ Kod: ./exercise-7
 
 ## Zadanie 8 Testy
 
-✅ 3.0 wymaganie 1
+✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/dcf26b741db37bbbb5a566b32d3255faa93747db)
 
 ❌ 3.5 wymaganie 2
 
