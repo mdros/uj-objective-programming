@@ -111,3 +111,17 @@ Kod: ./exercise-7
 ❌ 5.0 wymaganie 5
 
 Kod: ./exercise-5/tests
+
+## Zadanie 9 Kotlin - Android
+
+✅ 3.0 wymaganie 1 [commit](https://github.com/mdros/uj-objective-programming/commit/d62fd6f65aae3eba4715fcf3f70cfdb154ccea95)
+
+❌ 3.5 wymaganie 2
+
+❌ 4.0 wymaganie 3
+
+❌ 4.5 wymaganie 4
+
+❌ 5.0 wymaganie 5
+
+Kod: ./exercise-9
