@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">exercise-9</string>
+    <string name="title_home">Categories</string>
+    <string name="title_dashboard">Products</string>
+</resources>
